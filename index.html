@@ -1,32 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>ОПЯТЬ ПОМЕНЯТЬ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f0ff;
+            color: #003366;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #002244;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .images {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .images img {
+            border: 3px solid #004080;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1.6s ease-in-out;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 64, 128, 0.4);
+        }
+
+        .block {
+            background-color: #cce0ff;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 6px solid #004080;
+            animation: fadeIn 1.8s ease-in-out;
+        }
+
+        .joke {
+            background-color: #f0f8ff;
+            border-left: 5px solid #0077cc;
+            padding: 10px 15px;
+            margin: 15px 0;
+            font-style: italic;
+            color: #003355;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        a {
+            color: #0040ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1 style="text-align: center; color: green;">ОПЯТЬ ПОМЕНЯТЬ</h1>
-    <p>
-        найти в гугле любой текст
-    </p>
+    <header>
+        <h1>Добро пожаловать на мой сайт</h1>
+    </header>
 
+    <main>
+        <div class="block">
+            <p>Найти в гугле любой текст</p>
+        </div>
 
-    <img src="https://image-server.autospot.ru/images/1/0/2/2/1/6/16029344/resize/500x0/16029344.webp" width="400"
-        alt="">
+        <div class="joke">— Почему водитель всегда спокоен? <br>— Потому что у него есть тормоза... в обеих ногах и в жизни!</div>
 
-    <img src="https://adsboard-static.spectrumdata.tech/images/54/54a9b047-4724dec7-26eef63b-01c74487z.jpg" width="300"
-        alt="300">
+        <div class="images">
+            <img src="https://image-server.autospot.ru/images/1/0/2/2/1/6/16029344/resize/500x0/16029344.webp" width="400" alt="Изображение авто">
+            <img src="https://adsboard-static.spectrumdata.tech/images/54/54a9b047-4724dec7-26eef63b-01c74487z.jpg" width="300" alt="Изображение">
+        </div>
 
+        <div class="joke">— Моя машина такая старая, что когда я включаю навигатор, он говорит: "Поверни направо… если осёл позволит".</div>
 
-    <hr>
-    <h2>Услуги</h2>
+        <hr>
 
-    <a target="_blank" href="https://breezy.kz/smartphone/vendor=apple/series=iphone-15">купить айфон</a>
+        <h2>Услуги</h2>
+        <p>
+            <a target="_blank" href="https://breezy.kz/smartphone/vendor=apple/series=iphone-15">Купить айфон</a>
+        </p>
 
+        <div class="joke">— Автомеханик сказал, что машина в порядке. А потом пересел на автобус. Что-то тут нечисто…</div>
+
+        <hr>
+
+        <h2>Моё хобби — футбол</h2>
+        <div class="block">
+            <p>Я люблю играть в футбол на выходных. Это помогает держать форму и общаться с друзьями. Часто играю на позиции нападающего и стараюсь забивать голы!</p>
+            <img src="https://dasart.ru/userdata/image/V2/rk/V2rkOuyl1QhQRf1d.webp" width="400" alt="Футбол" style="margin-top:10px;">
+        </div>
+
+        <div class="joke">— Купил себе спорткар. <br>— И что, гоняешь? <br>— Да, по ремонту каждую неделю!</div>
+    </main>
 </body>
 
 </html>
